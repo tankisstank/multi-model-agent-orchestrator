@@ -1,0 +1,22 @@
+{
+  "name": "multi-model-agent-orchestrator",
+  "version": "0.1.0",
+  "description": "Evidence-driven orchestration for multi-agent and multi-project coding work.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Multi-Model Agent Orchestrator",
+    "shortDescription": "Coordinate risk-gated multi-agent work.",
+    "longDescription": "Plan, execute, audit, and resume evidence-driven work across one repository or a federated set of repositories.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "multi-agent coordination",
+      "cross-project planning",
+      "evidence and approval gates"
+    ],
+    "defaultPrompt": "Use Multi-Model Agent Orchestrator to plan a bounded, risk-gated change across my projects."
+  }
+}

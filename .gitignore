@@ -1,0 +1,12 @@
+# Local orchestration state and evidence
+.orchestrator/
+artifacts/
+output/
+*.log
+*.tmp
+*.db
+
+# PowerShell and editor state
+*.user
+.vscode/
+.idea/

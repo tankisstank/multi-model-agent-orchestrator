@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multi-Model Orchestrator"
+  short_description: "Run Herdr-first, lifecycle-safe agent work"
+  default_prompt: "Use $multi-model-agent-orchestrator to plan or run a Herdr-first, risk-gated change and clean all run-owned resources."
