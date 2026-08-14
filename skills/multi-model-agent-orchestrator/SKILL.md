@@ -83,6 +83,11 @@ subagents cannot satisfy the package, probe and dispatch an external CLI directl
 in non-interactive mode. Give every worker the complete contract from [worker
 contract](references/worker-contract.md).
 
+For Herdr, use `pane run` only for a verified, static agent startup command. Persist
+the complete worker assignment as UTF-8 evidence, then send it with
+`scripts/send-herdr-worker-assignment.ps1`. Never interpolate assignment text into a
+PowerShell command line, nested `pwsh -Command`, or `pane run` invocation.
+
 Choose the workspace from [workspace selection](references/workspace-selection.md)
 and record the reason. Read-only packages and direct S0 leader edits normally need
 no new worktree. Require a worktree or equivalent isolation for concurrent writers,
@@ -142,6 +147,8 @@ report the exact manual action needed.
 - Prefer local deterministic commands for tests and probes.
 - For direct CLI fallback only, do not invent flags. Use the probe and
   [provider adapters](references/provider-adapters.md).
+- Use file or stdin transport for dynamic worker text; do not use backslash escaping
+  such as `\"` in PowerShell command construction.
 - Record provider, backend type, session ID, command, and captured evidence.
 
 ## Final report

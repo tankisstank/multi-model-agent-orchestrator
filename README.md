@@ -14,6 +14,8 @@ Claude, Grok, Gemini, and compatible command-line agents.
 - Cross-repository changes with explicit contract ownership and release order.
 - Durable run-state, bounded correction loops, and recoverable worker reports.
 - Herdr-first agent/CLI orchestration with native Codex and probed CLI fallbacks.
+- File-backed, literal worker-prompt transport for Herdr that avoids PowerShell
+  quoting failures.
 - Reconciliation and cleanup of run-owned panes, processes, browsers, temporary
   paths, and completed worktrees.
 - Independent verification before acceptance.
